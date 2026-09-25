@@ -1,0 +1,19 @@
+.feature-block {
+  padding: 28px 24px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-soft);
+
+  &__title {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+}

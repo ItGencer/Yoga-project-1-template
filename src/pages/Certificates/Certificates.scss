@@ -1,0 +1,33 @@
+.certificate-card {
+  padding: 28px 24px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+
+  &--featured {
+    background: linear-gradient(135deg, rgba(204, 51, 102, 0.08), rgba(217, 164, 108, 0.15));
+    border-color: rgba(204, 51, 102, 0.2);
+  }
+
+  &__label {
+    margin: 0 0 12px;
+    color: var(--color-accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.82rem;
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+}

@@ -1,0 +1,45 @@
+.post {
+  max-width: 860px;
+  margin: 0 auto;
+
+  &__header {
+    margin-bottom: 28px;
+  }
+
+  &__excerpt {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 1.12rem;
+  }
+
+  &__media {
+    height: 360px;
+    margin-bottom: 28px;
+    border-radius: var(--radius-card);
+    background: linear-gradient(135deg, rgba(29, 46, 76, 0.12), rgba(204, 51, 102, 0.12), rgba(217, 164, 108, 0.18));
+    box-shadow: var(--shadow-soft);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__paragraph {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 1.04rem;
+  }
+
+  &__back {
+    display: inline-block;
+    margin-top: 28px;
+    color: var(--color-accent);
+    font-weight: 700;
+
+    &:hover {
+      color: var(--color-accent-alt);
+    }
+  }
+}
