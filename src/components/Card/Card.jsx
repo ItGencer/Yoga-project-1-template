@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Card.scss';
 
-function Card({ title, description, meta, linkText = 'Читати далі', linkTo = '#', variant = 'default' }) {
+function Card({ img, title, description, meta, linkText = 'Читати далі', linkTo = '#', variant = 'default' }) {
   return (
     <article className={`card card--${variant}`}>
-      <div className="card__image" aria-hidden="true" />
+      <img src={img} alt={title}/>
       <div className="card__body">
         {meta ? <p className="card__meta">{meta}</p> : null}
         <h3 className="card__title">{title}</h3>

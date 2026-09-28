@@ -1,21 +1,29 @@
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
 import './Home.scss';
+import yogaClub from '../../assest/yoga-club.jpg';
+import yogaClub2 from '../../assest/yoga-club2.jpg';
+import massageClasic from '../../assest/massage.jpg';
+import yogaRetring from '../../assest/yoga-retring.jpg';
+import massageIndividual from '../../assest/massage individual.jpg';
 
 const services = [
   {
+    img: massageClasic,
     title: 'Массаж для тіла',
     description: 'Релаксуючі та відновлювальні процедури для зняття напруги, покращення кровообігу та загального самопочуття.',
     meta: 'Класичний масаж',
     linkTo: '/school',
   },
   {
+    img: yogaRetring,
     title: 'Йога-ретрит',
     description: 'Плавні практики для гнучкості, правильної постави та внутрішнього балансу в повсякденному ритмі.',
     meta: 'Станова практика',
     linkTo: '/yoga',
   },
   {
+    img: massageIndividual,
     title: 'Індивідуальний підхід',
     description: 'Програма під кожну людину, враховуючи потреби, рівень активності та цілі відновлення.',
     meta: 'Персональна програма',
@@ -46,9 +54,9 @@ function Home() {
               <Button to="/school" variant="gold">Дізнатися більше</Button>
             </div>
           </div>
-
-          <div className="hero__visual" aria-label="Зображення для масажу та йоги" />
-        </section>
+          
+          <img src={yogaClub} alt='yoga'/>
+          </section>
       </div>
 
       <section className="section">
@@ -57,6 +65,7 @@ function Home() {
           <div className="grid grid--three">
             {services.map((service) => (
               <Card
+              img = {service.img}
                 key={service.title}
                 meta={service.meta}
                 title={service.title}
@@ -96,7 +105,7 @@ function Home() {
       <section className="section section--muted">
         <div className="container">
           <div className="split split--reverse">
-            <div className="split__media" aria-label="Плейсхолдер до фото" />
+            <img src={yogaClub2} alt='Yoga Studio' />
             <div className="split__content">
               <p className="page__eyebrow">Чому саме ми</p>
               <h2 className="section__title">Зручний формат для вашого ритму</h2>
