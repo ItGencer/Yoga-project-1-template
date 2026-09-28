@@ -4,7 +4,10 @@ import './Card.scss';
 function Card({ img, title, description, meta, linkText = 'Читати далі', linkTo = '#', variant = 'default' }) {
   return (
     <article className={`card card--${variant}`}>
+      <div className="img-block">
+
       <img src={img} alt={title}/>
+      </div>
       <div className="card__body">
         {meta ? <p className="card__meta">{meta}</p> : null}
         <h3 className="card__title">{title}</h3>
