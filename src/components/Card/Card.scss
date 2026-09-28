@@ -6,9 +6,9 @@
   border: 1px solid var(--color-line);
   border-radius: var(--radius-card);
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  
-
+  box-shadow:
+    11px 10px 12px 0px rgba(83, 30, 204, 0.31); 
+      
   &__body {
     display: flex;
     flex: 1;
