@@ -17,7 +17,7 @@ function App() {
     <div className="app-shell">
       <Header />
 
-      <main className="main-layout">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/yoga" element={<Yoga />} />

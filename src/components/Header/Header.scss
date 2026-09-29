@@ -1,15 +1,16 @@
 .header {
-      position: sticky;
-    top: 0;
-    z-index: 1;
-    background: var(--color-dark);
-    border-bottom: 1px solid #fff2;    padding: 5px 15px;
-    
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--color-dark);
+  border-bottom: 1px solid #fff2;
+  padding: 5px 15px;
+
   &__inner {
     display: flex;
     align-items: center;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &__brand {
       flex: 0 0 clamp(44px, 4vw, 58px);

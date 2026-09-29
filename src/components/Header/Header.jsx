@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
-import SocialLinks from "../SocialLinks/SocialLinks";
 import logo from "../../assest/logo.png";
 import Navigation from "../Navigation/Navigation";
 import "./Header.scss";
@@ -18,13 +17,12 @@ function Header() {
         </NavLink>
 
         <div className="header__inner__actions">
-          <SocialLinks theme="dark" />
           <Button to="/contacts" variant="gold" theme="dark">
             Записатися
           </Button>
+        <Navigation />
         </div>
 
-        <Navigation />
       </div>
     </header>
   );

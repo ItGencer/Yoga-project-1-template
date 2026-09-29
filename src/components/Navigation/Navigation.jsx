@@ -1,6 +1,7 @@
 import "./Navigation.scss";
 import { useEffect, useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const navItems = [
   { label: "Головна", to: "/" },
@@ -146,6 +147,9 @@ function Navigation() {
                 </NavLink>
               </li>
             ))}
+            <li className="list__social">
+          <SocialLinks theme="dark" 
+           /></li>
           </ul>
         </div>
       </div>
@@ -167,6 +171,8 @@ function Navigation() {
         <span></span>
         <span></span>
       </div>
+
+      
     </nav>
   );
 }

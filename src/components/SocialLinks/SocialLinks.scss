@@ -3,17 +3,17 @@
     gap: 10px;
     justify-content: space-between;
 
-  &__item {
-        display: flex;
-    padding: 3px;
+  &__item {display: flex;
+    padding: 5px;
     border-radius: 50%;
-
+    
     &:hover {
       transform: translateY(-1px);
     }
 
-    svg {    width: 20px;
-    height: 20px;
+    svg {
+      width: 30px;
+    height: 30px;
     fill: currentColor;
     }
   }
