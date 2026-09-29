@@ -84,9 +84,9 @@ const socialLinks = [
   },
 ];
 
-function SocialLinks({ theme = "light" }) {
+function SocialLinks() {
   return (
-    <div className={`social-links social-links--${theme}`}>
+    <div className={`social-links social-links--light`}>
       {socialLinks.map(({ label, href, icon }) => (
         <a
           key={label}

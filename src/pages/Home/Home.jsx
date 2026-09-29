@@ -42,35 +42,32 @@ const recommendationStats = [
 
 function Home() {
   return (
-    <div className="page page--home">
-      <div className="container">
-        <section className="hero">
-          <div className="hero__content">
-            <p className="page__eyebrow">Масаж і йога для життя в рівновазі</p>
-            <h1 className="hero__title">
-              Теплий простір для релаксу та відновлення.
-            </h1>
-            <p className="hero__text">
-              Допомагаємо звільнити тіло від напруги, повернути спокій і
-              відновити енергію через масаж, йогу та індивідуальний підхід до
-              кожного клієнта.
-            </p>
-            <div className="hero__actions">
-              <Button to="/contacts" variant="primary">
-                Записатися
-              </Button>
-              <Button to="/school" variant="gold">
-                Дізнатися більше
-              </Button>
-            </div>
+    <div>
+      <section className="hero">
+        <div className="hero__content">
+          <p className="hero__content__anchor">Масаж і йога для життя в рівновазі</p>
+          <h1 className="hero__title">
+            Теплий простір для релаксу та відновлення.
+          </h1>
+          <p className="hero__text">
+            Допомагаємо звільнити тіло від напруги, повернути спокій і відновити
+            енергію через масаж, йогу та індивідуальний підхід до кожного
+            клієнта.
+          </p>
+          <div className="hero__actions">
+            <Button to="/contacts" variant="primary">
+              Записатися
+            </Button>
+            <Button to="/school" variant="gold">
+              Дізнатися більше
+            </Button>
           </div>
+        </div>
 
-          <div className="img-block">
-            <img src={yogaClub} alt="yoga" />
-          </div>
-        </section>
-      </div>
-
+        <div className="img-block">
+          <img src={yogaClub} alt="yoga" />
+        </div>
+      </section>
       <section className="section">
         <div className="container">
           <h2 className="section__title">Наші послуги</h2>
@@ -90,43 +87,37 @@ function Home() {
       </section>
 
       <section className="section section--muted">
-        <div className="container">
-          <div className="recommendations">
-            <div className="recommendations__intro">
-              <p className="page__eyebrow">Чому нас рекомендують</p>
-              <h2 className="section__title">
-                Легкість тіла, ясність думок і відчуття відновлення.
-              </h2>
-            </div>
+        <div className="recommendations__intro">
+          <p className="page__eyebrow">Чому нас рекомендують</p>
+          <h2 className="section__title">
+            Легкість тіла, ясність думок і відчуття відновлення.
+          </h2>
+        </div>
 
-            <div className="recommendations__list">
-              {recommendationStats.map(({ label, value }) => (
-                <div key={label} className="recommendation-item">
-                  <div className="recommendation-item__meta">
-                    <span>{label}</span>
-                    <strong>{value}%</strong>
-                  </div>
-                  <div className="progress-bar" aria-label={`${value}%`}>
-                    <span
-                      className="progress-bar__fill"
-                      style={{ width: `${value}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
+        <div className="recommendations__list">
+          {recommendationStats.map(({ label, value }) => (
+            <div key={label} className="recommendation-item">
+              <div className="recommendation-item__meta">
+                <span>{label}</span>
+                <strong>{value}%</strong>
+              </div>
+              <div className="progress-bar" aria-label={`${value}%`}>
+                <span
+                  className="progress-bar__fill"
+                  style={{ width: `${value}%` }}
+                />
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </section>
 
       <section className="section section--muted">
         <div className="container">
           <div className="split split--reverse">
-
-            
-          <div className="img-block">
-            <img src={yogaClub2} alt="Yoga Studio" />
-          </div>
+            <div className="img-block">
+              <img src={yogaClub2} alt="Yoga Studio" />
+            </div>
             <div className="split__content">
               <p className="page__eyebrow">Чому саме ми</p>
               <h2 className="section__title">
